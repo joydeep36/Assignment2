@@ -1,25 +1,7 @@
 <!DOCTYPE html>
 <html>
-<!-- <head>
-	<title>Dynamic Content using JavaScript</title>
-	<script src="script.js"></script>
-</head>
-<body>
-	<h1>Dynamic Content using JavaScript</h1>
-	<label>Room Rental:</label>
-	<input type="number" id="value1" onkeyup="calculateTotal()"><br><br>
-	<label>Food:</label>
-	<input type="number" id="value2" onkeyup="calculateTotal()"><br><br>
-	<label>Entertainment:</label>
-	<input type="number" id="value3" onkeyup="calculateTotal()"><br><br>
-	<label>Total:</label>
-	<input type="number" id="total" readonly><br><br>
-	<label>With Tax:</label>
-	<input type="number" id="totalWithTax" readonly>
-</body> -->
-
 <head>
-	<title>Dynamic Content with Capital Name Toggle</title>
+	<title>This example demonstrates doing calculation</title>
 	<style>
 		body {
 			margin: 0;
@@ -50,51 +32,21 @@
 			document.getElementById('totalWithTax').value = totalWithTax.toFixed(2);
 		}
 
-		document.getElementById('hideBtn').addEventListener('click', function() {
-			document.getElementById('capitalName').style.display = 'none';
-		});
-
-		document.getElementById('showBtn').addEventListener('click', function() {
-			document.getElementById('capitalName').style.display = 'block';
-		});
-
-		document.getElementById('toggleBtn').addEventListener('click', function() {
-			var capitalName = document.getElementById('capitalName');
-			if (capitalName.style.display === 'none') {
-				capitalName.style.display = 'block';
-			} else {
-				capitalName.style.display = 'none';
-			}
-		});
-
-		document.getElementById('firstPara').addEventListener('mouseover', function() {
-			this.style.backgroundColor = 'yellow';
-		});
-
-		document.getElementById('secondPara').addEventListener('click', function() {
-			this.style.backgroundColor = 'green';
-		});
+	
 	</script>
 </head>
 <body>
-	<h1>Dynamic Content with Capital Name Toggle</h1>
-	<label>Value 1:</label>
+	<h1>This example demonstrates doing calculation</h1>
+	<label>Room Rental:</label>
 	<input type="number" id="value1" onkeyup="calculateTotal()"><br><br>
-	<label>Value 2:</label>
+	<label>Food:</label>
 	<input type="number" id="value2" onkeyup="calculateTotal()"><br><br>
-	<label>Value 3:</label>
+	<label>Entertainment:</label>
 	<input type="number" id="value3" onkeyup="calculateTotal()"><br><br>
 	<label>Total:</label>
 	<input type="number" id="total" readonly><br><br>
-	<label>Total with Tax (13%):</label>
+	<label>Total with Tax:</label>
 	<input type="number" id="totalWithTax" readonly><br><br>
-	<button id="hideBtn">Hide capital name</button>
-	<button id="showBtn">Show capital name</button>
-	<button id="toggleBtn">Toggle</button>
-	<p id="capitalName">Ottawa</p>
-	<div id="paragraphs">
-		<p id="firstPara">Hover over me to change background color to yellow</p>
-		<p id="secondPara">Click me to change background color to green</p>
-	</div>
+	
 </body>
 </html>

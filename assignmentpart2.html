@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Capital Name</title>
+  <script>
+    function hideText() {
+      var capital = document.getElementById("capital");
+      capital.style.display = "none";
+    }
+    function showText() {
+      var capital = document.getElementById("capital");
+      capital.style.display = "block";
+    }
+    function toggleCapital() {
+      var capital = document.getElementById("capital");
+      capital.classList.toggle("hidden");
+    }
+    function changeBackgroundColor(id, color) {
+      document.getElementById(id).style.backgroundColor = color;
+    }
+  </script>
+  <style>
+    .hidden {
+      display: none;
+    }
+    h4 :hover {
+       color: rgb(253, 253, 16);
+
+    } 
+
+    #p2 {
+      cursor: pointer;
+    }
+   
+  </style>
+</head>
+<body>
+  <h1>Country:</h1>
+  <h2>Canada</h2>
+  <h1>Capital</h1>
+   <h2 id="capital">Ottawa</h2>
+  <button onclick="hideText()">Hide capital name</button>
+  <button onclick="showText()">Show capital name</button>
+  <button onclick="toggleCapital()">Toggle</button>
+ 
+  <br>
+  <h4>Hover over me to change color to yellow</h4>
+  <br>
+  <p id="p2"onclick="changeBackgroundColor('p2', 'green')">Click me to change background color to green</p>
+</body>
+</html>
